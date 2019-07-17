@@ -16,7 +16,7 @@
     <section id="nav-bar">
         <nav class="navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand" href="#"><img src="images/log.png"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -39,13 +39,13 @@
         </nav>
     </section>
     <section id="about">
-      <div class="container">
+      <div class="container one">
           <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-12 col-lg-6">
                 <h1>Digital<br>Engineering</h1>
                 <p>A platform focused on producing software engineering contents related to Android and Blockchain through its Blog and YouTube channel by showing of tips, how-tos and tutorials.</p>
               </div>
-              <div class="col-md-6">
+              <div class="col-md-12 col-lg-6">
                 <img src="images/homepage-illustration.svg" class="image-brand"></a>
               </div>
           </div>
@@ -54,7 +54,7 @@
     <section id="second">
       <div class="container para">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-12 half">
               <div class="icon">
                   <svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
@@ -74,7 +74,7 @@
               <h5>Visit the Blog</h5>
               <p>Checkout our blog to read and contribute to interesting topics.</p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 col-sm-12 full">
                 <div class="icon">
                     <svg width="55px" height="52px" viewBox="0 0 55 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                       <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
@@ -145,6 +145,10 @@
             $('.subscribe p').toggleClass('night');
             $('#footer').toggleClass('lower-night');
             $('.text-center p').toggleClass('b-night');
+        });
+
+        $('.navbar-toggler').click(function(){
+          $('.collapse.navbar-collapse').toggleClass('show');
         })
       })
     </script>
